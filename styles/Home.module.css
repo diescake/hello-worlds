@@ -18,7 +18,11 @@
 
 .beerList {
   width: 640px;
-  /* height: 480px; */
+  text-align: center;
+}
+
+.beerList > img {
+  width: 640px;
 }
 
 .footer {

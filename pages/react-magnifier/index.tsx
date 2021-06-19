@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Magnifier from 'react-magnifier'
 
 import Head from 'next/head'
@@ -7,6 +7,8 @@ import Image from 'next/image'
 import styles from '../../styles/Home.module.css'
 
 export default function Home() {
+  const [imageSrc, setImageSrc] = useState('/images/beer_list.jpg')
+
   return (
     <div className={styles.container}>
       <Head>
@@ -23,21 +25,22 @@ export default function Home() {
         <h2>img elements (original image)</h2>
 
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img className={styles.beerList} src="/images/beer_list.jpg" alt="beer list" />
+        <img className={styles.beerList} src={imageSrc} alt="beer list" />
 
         <h2>Magnifier</h2>
 
         <Magnifier
-          height="480px"
-          width="640px"
+          className={styles.beerList}
           zoomFactor={1.5}
           mgWidth={300}
           mgHeight={300}
           mgShape="circle"
           mgShowOverflow={false}
           mgBorderWidth={5}
-          src="/images/beer_list.jpg"
+          src={imageSrc}
         />
+
+        <input type="text" value={imageSrc} onChange={e => setImageSrc(e.target.value)} />
       </main>
 
       <footer className={styles.footer}>
