@@ -1,5 +1,4 @@
-This is my playground for Next.js a.k.a. Hello Next.js world !!
-
+This site is a bundle of my many playgrounds a.k.a. Hello Worlds !!
 ## Installation
 
 Needs yarn.
@@ -15,4 +14,4 @@ Then, open [http://localhost:3000](http://localhost:3000) with your browser to s
 ## Deployment
 
 This app is hosted on Vercel.
-https://hello-next-world.vercel.app/
+https://hello-worlds.vercel.app/
