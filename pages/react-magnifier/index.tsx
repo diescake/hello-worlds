@@ -30,13 +30,13 @@ export default function Home() {
         <h2>Magnifier</h2>
 
         <Magnifier
-          className={styles.beerList}
+          width="640px"
           zoomFactor={1.5}
           mgWidth={300}
           mgHeight={300}
           mgShape="circle"
           mgShowOverflow={false}
-          mgBorderWidth={5}
+          mgBorderWidth={3}
           src={imageSrc}
         />
 
