@@ -1,17 +1,22 @@
-This site is a bundle of my many playgrounds a.k.a. Hello Worlds !!
+# hello-worlds
+
+This is a web application that is the bundle of my many hello worlds.
+
 ## Installation
 
-Needs yarn.
+```sh
+$ yarn
+```
 
-## How to run
+## Running web application
 
-```bash
+```sh
 $ yarn dev
 ```
 
-Then, open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then, open [http://localhost:3000](http://localhost:3000) in your browser to see the result.
 
-## Deployment
+## Memo
 
 This app is hosted on Vercel.
 https://hello-worlds.vercel.app/
