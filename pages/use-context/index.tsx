@@ -47,6 +47,44 @@ const Parent = () => {
   )
 }
 
+const MyContext2 = createContext({
+  count: 0,
+  setCount: (_: number) => {
+    /* do nothing */
+  },
+})
+
+const Child2 = () => {
+  console.log('Child2 rendered.')
+
+  const { count, setCount } = useContext(MyContext2)
+
+  return (
+    <>
+      <p className={styles.description}>Count: {count}</p>
+      <div>
+        <button type="button" onClick={() => setCount(count + 1)}>
+          +
+        </button>
+        <button type="button" onClick={() => setCount(count - 1)}>
+          -
+        </button>
+      </div>
+    </>
+  )
+}
+const Parent2 = () => {
+  console.log('Parent2 rendered.')
+
+  const [count, setCount] = useState(0)
+
+  return (
+    <MyContext2.Provider value={{ count, setCount }}>
+      <Child2 />
+    </MyContext2.Provider>
+  )
+}
+
 export default function Home() {
   console.log('Home rendered.')
 
@@ -64,6 +102,7 @@ export default function Home() {
         </h1>
 
         <Parent />
+        <Parent2 />
       </main>
 
       <footer className={styles.footer}>
