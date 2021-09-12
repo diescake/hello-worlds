@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useState, VFC } from 'react'
+import React, { VFC, createContext, useContext, useState } from 'react'
 
 import Head from 'next/head'
 import Image from 'next/image'
@@ -46,7 +46,6 @@ const Parent = () => {
     </>
   )
 }
-
 
 export default function Home() {
   console.log('Home rendered.')
