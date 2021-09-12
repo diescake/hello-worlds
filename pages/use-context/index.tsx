@@ -1,14 +1,42 @@
-import React, { useState } from 'react'
-import Magnifier from 'react-magnifier'
+import React, { createContext, useContext, useState, VFC } from 'react'
 
 import Head from 'next/head'
 import Image from 'next/image'
 
 import styles from '../../styles/Home.module.css'
 
-export default function Home() {
-  const [imageSrc, setImageSrc] = useState('/images/beer_list.jpg')
+const MyContext = createContext({ count: 0 })
 
+const Child: VFC<{ setCount: (count: number) => void }> = ({ setCount }) => {
+  const data = useContext(MyContext)
+
+  return (
+    <>
+      <p className={styles.description}>Count: {data.count}</p>
+      <div>
+        <button type="button" onClick={() => setCount(data.count + 1)}>
+          +
+        </button>
+        <button type="button" onClick={() => setCount(data.count - 1)}>
+          -
+        </button>
+      </div>
+    </>
+  )
+}
+
+const Parent = () => {
+  const [count, setCount] = useState(0)
+
+  return (
+    <MyContext.Provider value={{ count }}>
+      <Child setCount={setCount} />
+    </MyContext.Provider>
+  )
+}
+
+
+export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
@@ -19,8 +47,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Hello <a href="https://ja.reactjs.org/docs/hooks-reference.html#usecontext"> useContext </a> world !!
+          Hello <a href="https://ja.reactjs.org/docs/hooks-reference.html#usecontext">useContext</a> world !!
         </h1>
+
+        <Parent />
       </main>
 
       <footer className={styles.footer}>
