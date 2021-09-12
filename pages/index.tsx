@@ -16,13 +16,20 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Hello Worlds !!</h1>
 
-        <p className={styles.description}>This site is a bundle of my many playgrounds.</p>
+        <p className={styles.description}>This is a web application that is the bundle of my many Hello Worlds.</p>
 
         <div className={styles.grid}>
           <Link href="/react-magnifier" passHref>
             <div className={styles.card}>
               <h2>react-magnifier &rarr;</h2>
               <p>🔍 React image zoom component.</p>
+            </div>
+          </Link>
+
+          <Link href="/use-context" passHref>
+            <div className={styles.card}>
+              <h2>useContext &rarr;</h2>
+              <p>One of the React hooks you know.</p>
             </div>
           </Link>
 
