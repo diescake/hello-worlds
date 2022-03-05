@@ -1,7 +1,7 @@
-import React from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>Hello Worlds !!</h1>
 
-        <p className={styles.description}>This is a web application that is the bundle of my many Hello Worlds.</p>
+        <p className={styles.description}>This is a web application that is the bundle of my Hello World.</p>
 
         <div className={styles.grid}>
           <Link href="/react-magnifier" passHref>

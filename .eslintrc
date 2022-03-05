@@ -3,5 +3,8 @@
     "next",
     "next/core-web-vitals",
     "smarthr"
-  ]
+  ],
+  "rules": {
+    "react/react-in-jsx-scope": "off"
+  }
 }
