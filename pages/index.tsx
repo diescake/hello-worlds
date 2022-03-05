@@ -2,6 +2,8 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import styled from 'styled-components'
+
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,9 +16,9 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>Hello Worlds !!</h1>
+        <MainHeader>Hello Worlds !!</MainHeader>
 
-        <p className={styles.description}>This is a web application that is the bundle of my Hello World.</p>
+        <Description>This is a web application that is the bundle of my Hello World.</Description>
 
         <div className={styles.grid}>
           <Link href="/react-magnifier" passHref>
@@ -50,3 +52,27 @@ export default function Home() {
     </div>
   )
 }
+
+const MainHeader = styled.h1`
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+  text-align: center;
+
+  a {
+    color: #0070f3;
+    text-decoration: none;
+  }
+
+  & :hover,
+  & :focus,
+  & :active {
+    text-decoration: underline;
+  }
+`
+
+const Description = styled.p`
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+`
