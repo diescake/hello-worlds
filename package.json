@@ -25,7 +25,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-styled-components": "^2.0.6",
     "eslint": "^8.10.0",
-    "eslint-config-next": "^12.1.0",
+    "eslint-config-next": "^12.1.4",
     "eslint-config-smarthr": "^6.0.7",
     "prettier": "^2.5.1",
     "prettier-config-smarthr": "^1.0.0",
