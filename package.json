@@ -24,10 +24,10 @@
     "babel-plugin-inline-react-svg": "^2.0.1",
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-styled-components": "^2.0.7",
-    "eslint": "^8.10.0",
-    "eslint-config-next": "^12.1.6",
-    "eslint-config-smarthr": "^6.0.12",
-    "prettier": "^2.5.1",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^12.3.4",
+    "eslint-config-smarthr": "^6.24.0",
+    "prettier": "^2.8.8",
     "prettier-config-smarthr": "^1.0.0",
     "typescript": "^4.7.4"
   }
