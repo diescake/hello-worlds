@@ -10,7 +10,7 @@
     "format": "prettier --write ./pages"
   },
   "dependencies": {
-    "next": "^12.1.0",
+    "next": "^12.3.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-magnifier": "^3.0.4",
@@ -25,7 +25,7 @@
     "babel-plugin-module-resolver": "^4.1.0",
     "babel-plugin-styled-components": "^2.0.7",
     "eslint": "^8.10.0",
-    "eslint-config-next": "^12.1.6",
+    "eslint-config-next": "^12.3.7",
     "eslint-config-smarthr": "^6.0.12",
     "prettier": "^2.5.1",
     "prettier-config-smarthr": "^1.0.0",
